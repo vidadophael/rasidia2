@@ -1,0 +1,52 @@
+
+
+.cookies-msg {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 35px;
+    border-radius: 15px;
+    display: none;
+}
+
+.cookies-msg.show {
+    display: block;
+}
+
+.cookies-msg .cookies-txt {
+    display: flex;
+}
+
+.cookies-txt .cookies-btn {
+    display: flex;
+    gap: 12px;
+    padding: 10px;
+}
+
+.cookies-txt .cookies-btn button {
+    width: 100px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 0;
+    border: 1px solid transparent;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.cookies-txt .cookies-btn button:hover {
+    background-color: #FFFFFF;
+    color: #2D2D2D;
+    border: 1px solid #2D2D2D;
+}
+
+@media (max-width:1175px ) {
+    .cookies-msg .cookies-txt {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

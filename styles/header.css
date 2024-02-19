@@ -1,0 +1,125 @@
+.header {
+    background: #2D2D2D;
+    padding-inline: 16px;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 1580px;
+}
+
+.nav-list a {
+    color: #FFFFFF;
+    font-size: 54px;
+    opacity: 0;
+    padding-block: 16px;
+    padding-right: 150px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-list li a {
+    transition: .1s ease-in-out;
+}
+.nav-list li a:hover {
+    font-weight: bold;
+}
+
+/*btn menu hamburger*/
+.hamburger {
+    background: none;
+    border:none;
+    border-top: 3px solid #FFFFFF;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+}
+/*criando os tracinhos*/
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    background: #FFFFFF;
+    display: block;
+    height: 3px;
+    margin-top: 12px;
+    position: relative;
+    transition: .3s ease-in-out;
+    width: 50px;
+}
+
+.nav-list {
+    align-items: flex-end;
+    background: #000000;
+    clip-path: circle(100px at 100% -25%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    justify-content: space-around;
+    left: 0;
+    list-style: none;
+    padding-top: 10px;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    transition: .5s ease-out;
+    width: 100vw;
+}
+
+/*transição individual para cada link*/
+.nav-list li:nth-child(1) a {
+    transition: .5s .2s;
+}
+.nav-list li:nth-child(2) a {
+    transition: .5s .4s;
+}
+.nav-list li:nth-child(3) a {
+    transition: .5s .6s;
+}
+.nav-list li:nth-child(4) a {
+    transition: .5s .8s;
+}
+.nav-list li:nth-child(5) a {
+    transition: .5s 1s;
+}
+.nav-list li:nth-child(6) a {
+    transition: .5s 1.2s;
+}
+
+/*estilos ativos*/
+.nav.active .nav-list {
+    clip-path: circle(3000px at 100% -15%);
+    pointer-events: all;
+}
+.nav.active .nav-list a {
+    opacity: 1;
+}
+
+/*transformando menu em um X*/
+.nav.active .hamburger {
+    border-top-color: transparent;
+    position: fixed;
+    right: 16px;
+    top: 59px;
+}
+.nav.active .hamburger::before {
+    transform: rotate(135deg);
+}
+.nav.active .hamburger::after {
+    top: -15px;
+    transform: rotate(-135deg);
+}
+
+@media (max-width: 635px) {
+    .nav-list a {
+        font-size: 48px;
+        padding-right: 90px;
+    }
+    .nav-list {
+        padding-bottom: 50px;
+    }
+}
