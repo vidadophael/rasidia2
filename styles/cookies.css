@@ -3,6 +3,7 @@
 .cookies-msg {
     width: 80%;
     background-color: rgb(255, 255, 255);
+    color: #2D2D2D;
     position: fixed;
     bottom: 5%;
     left: 50%;
