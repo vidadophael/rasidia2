@@ -1,0 +1,88 @@
+.dev {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-inline: 16px;
+}
+
+.dev-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    padding-inline: 16px;  
+}
+
+.devTitle {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-bottom: 50px;
+    padding-inline: 16px;
+    width: 100vw;
+}
+.dev-context {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 25px;
+}
+
+.dev-context p {
+    max-width: 1280px;
+    padding-bottom: 25px;
+    padding-inline: 16px;
+}
+
+.dev-iconsTitle h2 {
+    font-size: 38px;
+    padding-block: 25px;
+}
+
+.dev-icons {
+    align-items: center;
+    background: #FFF;
+    color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 50px;
+    padding-inline: 16px;
+    width: 100vw;
+}
+.dev-iconsIten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.devCv {
+    padding: 25px;
+}
+.devCv a button {
+    background: #0084FF;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 50px;
+    padding: 15px 55px;
+    transition: .2s ease-in-out;
+}
+.devCv a button:hover {
+    background: #ffffff;
+    border: 1px solid #0084FF;
+    color: #0084FF;
+}
+
+@media (max-width: 835px) {
+    .dev-iconsTitle h2 {
+        font-size: 22px;
+    }
+    .dev-iconsIten img {
+        padding: 10px;
+    }
+}
