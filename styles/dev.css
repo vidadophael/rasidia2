@@ -23,11 +23,17 @@
     padding-inline: 16px;
     width: 100vw;
 }
+
+.devTiltle-main {
+    padding-inline: 16px;
+}
+
 .dev-context {
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding-bottom: 25px;
+    padding-inline: 16px;
 }
 
 .dev-context p {
@@ -51,6 +57,9 @@
     padding: 25px 50px;
     padding-inline: 16px;
     width: 100vw;
+}
+.dev-margin {
+    margin-bottom: 25px;
 }
 .dev-iconsIten {
     display: flex;
