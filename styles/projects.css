@@ -1,0 +1,67 @@
+.projects {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-inline: 16px;
+}
+
+.pjt-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 1280px;
+    width: 100vw;
+}
+
+.pjt-cards {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pjtCard {
+    border: 1px solid #0084FF;
+    display: flex;
+    flex-direction: column;
+    height: 452px;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 15px;
+    width: 250px;
+}
+
+.pjtCard a button {
+    background: #0084FF;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px;
+    transition: .2s ease-in-out;
+    width: 100%;
+}
+.pjtCard a button:hover {
+    background: #FFFFFF;
+    color: #0084FF;
+}
+
+@media (max-width: 600px) {
+    .pjt-cards {
+        justify-content: center;
+    }
+    .pjtCard img,
+    .pjtCard h2,
+    .pjtCard p,
+    .pjtCard a button,
+    .pjtCard {
+        width: 200px;
+    }
+    .pjtCard {
+        align-items: center;
+        gap: 5px;
+    }
+}
